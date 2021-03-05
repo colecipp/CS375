@@ -10,7 +10,6 @@ int main(int argc, char* argv[])
     printf("epic");
 
     while (fgets(line, sizeof(line), file1)) {
-      printf("while");
         /* note that fgets don't strip the terminating \n, checking its
            presence would allow to handle lines longer that sizeof(line) */
         printf("%s", line);
