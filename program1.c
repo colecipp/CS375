@@ -7,10 +7,10 @@ int main(int argc, char* argv[])
     FILE* file1 = fopen(MarketPriceFile, "r");
     FILE* file2 = fopen(PriceListFile, "r"); /* should check the result */
     char line[256];
-    printf("epic")
+    printf("epic");
 
     while (fgets(line, sizeof(line), file1)) {
-      printf("while")
+      printf("while");
         /* note that fgets don't strip the terminating \n, checking its
            presence would allow to handle lines longer that sizeof(line) */
         printf("%s", line);
