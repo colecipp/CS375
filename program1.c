@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "MarketPriceFile.txt"
-#include "PriceListFile.txt"
 int main(int argc, char* argv[])
 {
     char const* const MarketPriceFile = argv[1];
