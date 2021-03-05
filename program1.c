@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 int main(int argc, char* argv[])
 {
     char const* const MarketPriceFile = argv[1];
@@ -7,8 +7,10 @@ int main(int argc, char* argv[])
     FILE* file1 = fopen(MarketPriceFile, "r");
     FILE* file2 = fopen(PriceListFile, "r"); /* should check the result */
     char line[256];
+    printf("epic")
 
     while (fgets(line, sizeof(line), file1)) {
+      printf("while")
         /* note that fgets don't strip the terminating \n, checking its
            presence would allow to handle lines longer that sizeof(line) */
         printf("%s", line);
