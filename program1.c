@@ -2,10 +2,10 @@
 
 int main(int argc, char* argv[])
 {
-//     char const* const market-price-file = argv[1];
-//     char const* const price-list-file = argv[1]; /* should check that argc > 1 */
-    FILE* file1 = fopen(market-price-file, "r");
-    FILE* file2 = fopen(price-list-file, "r"); /* should check the result */
+    char const* const MarketPriceFile = argv[1];
+    char const* const PriceListFile = argv[1]; /* should check that argc > 1 */
+    FILE* file1 = fopen(MarketPriceFile, "r");
+    FILE* file2 = fopen(PriceListFile, "r"); /* should check the result */
     char line[256];
 
     while (fgets(line, sizeof(line), file1)) {
