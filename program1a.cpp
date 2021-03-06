@@ -17,7 +17,7 @@ int main()
         string card;
         int worth;
 
-        std::replace(line.begin()+1, line.end(), ',', ' ');
+        std::replace(line.begin()-1, line.end(), ',', ' ');
 
         stringstream ss(line);
 
