@@ -4,17 +4,17 @@ int main(int argc, char* argv[])
 {
     char *MarketPriceFile = malloc(4);
     char *PriceListFile = malloc(4);
-    int *ptr;
-    *MarketPriceFile = argv[1];
-    *PriceListFile = argv[2]; /* should check that argc > 1 */
+    // char *line;
+    // int n;
+    MarketPriceFile = argv[1];
+    PriceListFile = argv[2]; /* should check that argc > 1 */
     FILE* file1 = fopen(MarketPriceFile, "r");
     FILE* file2 = fopen(PriceListFile, "r"); /* should check the result */
-    char *line[] = malloc(8);
-    ptr = (int*)malloc(n * sizeof(int));
+    // line = (char*)malloc(n * sizeof(int));
+    char line[50];
     printf("epic");
 
     while (fgets(line, sizeof(line), file1)) {
-      ptr[sizeof(line)] = sizeof(line)+1;
         /* note that fgets don't strip the terminating \n, checking its
            presence would allow to handle lines longer that sizeof(line) */
       printf("%s", line);
