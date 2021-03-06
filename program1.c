@@ -8,8 +8,10 @@ int main(int argc, char* argv[])
     // int n;
     MarketPriceFile = argv[1];
     PriceListFile = argv[2]; /* should check that argc > 1 */
-    FILE* file1 = fopen(MarketPriceFile, "r");
-    FILE* file2 = fopen(PriceListFile, "r"); /* should check the result */
+    FILE* file1 = malloc(8);
+    FILE* file2 = malloc(8);
+    file1 = fopen(MarketPriceFile, "r");
+    file2 = fopen(PriceListFile, "r"); /* should check the result */
     // line = (char*)malloc(n * sizeof(int));
     char line[50];
     printf("epic");
