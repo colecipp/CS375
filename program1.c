@@ -13,7 +13,7 @@ int main(int argc, char* argv[])
     file1 = fopen(MarketPriceFile, "r");
     file2 = fopen(PriceListFile, "r"); /* should check the result */
     // line = (char*)malloc(n * sizeof(int));
-    char line[50];
+    char line[5];
     printf("epic");
 
     while (fgets(line, sizeof(line), file1)) {
