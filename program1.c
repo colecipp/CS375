@@ -6,7 +6,7 @@ int main(int argc, char* argv[])
     char const* const PriceListFile = argv[1]; /* should check that argc > 1 */
     FILE* file1 = fopen(MarketPriceFile, "r");
     FILE* file2 = fopen(PriceListFile, "r"); /* should check the result */
-    char line[256];
+    char line[50];
     printf("epic");
 
     while (fgets(line, sizeof(line), file1)) {
