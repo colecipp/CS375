@@ -26,7 +26,7 @@ int main()
 
 
         cout << "Name:" << card << " ";
-        cout << "Cost: " << std::setfill('0') << std::setw(4) << worth << " ";
+        cout << "Cost: " << worth << " ";
 
         cout << '\n';
     }
