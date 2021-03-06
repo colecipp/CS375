@@ -17,7 +17,7 @@ int main()
         string card;
         int worth;
 
-        std::replace(line.begin(), line.end(), ',', ' ');
+        std::replace(line.begin()+1, line.end(), ',', ' ');
 
         stringstream ss(line);
 
@@ -26,7 +26,7 @@ int main()
 
 
         cout << "Name:" << card << " ";
-        cout << "Cost: " << worth << " ";
+        cout << "Value: " << worth << " ";
 
         cout << '\n';
     }
