@@ -16,9 +16,7 @@ int main()
     int maxProfit = 0;
     set <int> S;
     set <int> M;
-    S.insert(1);
-    M.insert(1);
-    set<int>::iterator it = S.begin();
+
 
     while(getline(testFile1, line)){
 
