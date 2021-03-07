@@ -25,11 +25,12 @@ int main()
         ss >> card;
         ss >> worth;
 
+        if (std::string::npos != card.find_first_of("0123456789")) {
+          cout << "Name:" << card << " ";
+          cout << "Cost: " << worth << " ";
+          cout << '\n';
+        }
 
-        cout << "Name:" << card << " ";
-        cout << "Value: " << worth << " ";
-
-        cout << '\n';
     }
     while(getline(testFile2, line)){
 
