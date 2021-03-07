@@ -4,7 +4,6 @@
 #include <iostream>
 #include <sstream>
 #include <string>
-#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -15,9 +14,51 @@ int main()
     string line1;
     string line2;
     int maxProfit = 0;
-    set <int> S;
-    set <int> M;
 
+    while(getline(testFile2, line1)){
+
+        string card1;
+        int price;
+        stringstream s(line1);
+        s >> card2;
+        s >> worth;
+        while(getline(testFile1, line2)){
+
+            string card2;
+            int worth;
+
+            std::replace(line2.begin(), line2.end(), ',', ' ');
+
+            stringstream ss(line2);
+
+            ss >> card2;
+            ss >> worth;
+            //std::string::npos == card2.find_first_of(card1)&&
+            if ((std::string::npos == card2.find_first_of("0123456789"))) {
+
+              cout << "Name:" << card2 << " ";
+              cout << "Cost: " << worth << " ";
+              cout << "Price: " << price << " ";
+              cout << '\n';
+
+            }
+
+        }
+        // std::replace(line1.begin(), line1.end(), ',', ' ');
+
+        // stringstream ss(line1);
+
+        ss >> card1;
+        ss >> price;
+
+        // if (std::string::npos == card1.find_first_of("0123456789")) {
+        //   cout << "Name:" << card1 << " ";
+        //   cout << "Cost: " << price << " ";
+        //   cout << '\n';
+        //
+        // }
+
+    }
     // while(getline(testFile1, line)){
     //
     //     string card;
@@ -38,46 +79,6 @@ int main()
     //     }
     //
     // }
-    while(getline(testFile2, line1)){
-
-        string card1;
-        int price;
-        while(getline(testFile1, line2)){
-
-            string card2;
-            int worth;
-
-            std::replace(line2.begin(), line2.end(), ',', ' ');
-
-            stringstream ss(line2);
-
-            ss >> card2;
-            ss >> worth;
-
-            if (std::string::npos == card2.find_first_of(card1)&&(std::string::npos == card2.find_first_of("0123456789"))) {
-              cout << "Name:" << card2 << " ";
-              cout << "Cost: " << worth << " ";
-              cout << "Price: " << price << " ";
-              cout << '\n';
-
-            }
-
-        }
-        // std::replace(line1.begin(), line1.end(), ',', ' ');
-
-        stringstream ss(line1);
-
-        ss >> card1;
-        ss >> price;
-
-        // if (std::string::npos == card1.find_first_of("0123456789")) {
-        //   cout << "Name:" << card1 << " ";
-        //   cout << "Cost: " << price << " ";
-        //   cout << '\n';
-        //
-        // }
-
-    }
 }
 // COMPUTEMAXPROFIT (I, W)
 //   maxProfit = 0;
