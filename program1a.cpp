@@ -4,6 +4,7 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -13,8 +14,11 @@ int main()
     ifstream testFile2("PriceListFile");
     string line;
     int maxProfit = 0;
-    set<int> S;
-    set<int> M;
+    set <int> S;
+    set <int> M;
+    S.insert(1);
+    M.insert(1);
+    set<int>::iterator it = s.begin();
 
     while(getline(testFile1, line)){
 
