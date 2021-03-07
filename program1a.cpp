@@ -9,15 +9,16 @@ using namespace std;
 
 int main()
 {
-    ifstream testFile("MarketPriceFile");
+    ifstream testFile1("MarketPriceFile");
+    ifstream testFile2("PriceListFile");
     string line;
 
-    while(getline(testFile, line)){
+    while(getline(testFile1, line)){
 
         string card;
         int worth;
 
-        std::replace(line.begin()-1, line.end(), ',', ' ');
+        std::replace(line.begin(), line.end(), ',', ' ');
 
         stringstream ss(line);
 
@@ -27,6 +28,24 @@ int main()
 
         cout << "Name:" << card << " ";
         cout << "Value: " << worth << " ";
+
+        cout << '\n';
+    }
+    while(getline(testFile2, line)){
+
+        string card;
+        int worth;
+
+        std::replace(line.begin(), line.end(), ',', ' ');
+
+        stringstream ss(line);
+
+        ss >> card;
+        ss >> worth;
+
+
+        cout << "Name:" << card << " ";
+        cout << "Cost: " << worth << " ";
 
         cout << '\n';
     }
