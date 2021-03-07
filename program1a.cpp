@@ -57,6 +57,7 @@ int main()
             if (std::string::npos == card2.find_first_of(card1)&&(std::string::npos == card2.find_first_of("0123456789"))) {
               cout << "Name:" << card2 << " ";
               cout << "Cost: " << worth << " ";
+              cout << "Price: " << price << " ";
               cout << '\n';
 
             }
