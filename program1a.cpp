@@ -20,8 +20,8 @@ int main()
         string card1;
         int price;
         stringstream s(line1);
-        s >> card2;
-        s >> worth;
+        s >> card1;
+        s >> price;
         while(getline(testFile1, line2)){
 
             string card2;
@@ -47,9 +47,6 @@ int main()
         // std::replace(line1.begin(), line1.end(), ',', ' ');
 
         // stringstream ss(line1);
-
-        ss >> card1;
-        ss >> price;
 
         // if (std::string::npos == card1.find_first_of("0123456789")) {
         //   cout << "Name:" << card1 << " ";
