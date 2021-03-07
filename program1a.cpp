@@ -27,7 +27,7 @@ int main()
 
             string card2;
             int worth;
-
+            int MaxProfit = 0;
             std::replace(line2.begin(), line2.end(), ',', ' ');
 
             stringstream ss(line2);
@@ -37,6 +37,9 @@ int main()
             if ((std::string::npos != card2.find(card1)&&std::string::npos == card2.find_first_of("0123456789"))) {
               int profit = 0;
               profit = worth-price;
+              if (profit > MaxProfit){
+                MaxProfit = profit;
+              }
               cout << "Name:" << card2 << " ";
               cout << "Cost: " << worth << " ";
               cout << "Price: " << price << " ";
