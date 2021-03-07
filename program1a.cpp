@@ -19,6 +19,7 @@ int main()
 
         string card1;
         int price;
+        std::replace(line1.begin(), line1.end(), ',', ' ');
         stringstream s(line1);
         s >> card1;
         s >> price;
