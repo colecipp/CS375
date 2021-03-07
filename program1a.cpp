@@ -18,7 +18,7 @@ int main()
     set <int> M;
     S.insert(1);
     M.insert(1);
-    set<int>::iterator it = s.begin();
+    set<int>::iterator it = S.begin();
 
     while(getline(testFile1, line)){
 
