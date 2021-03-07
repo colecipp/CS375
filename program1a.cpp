@@ -69,12 +69,12 @@ int main()
         ss >> card1;
         ss >> price;
 
-        if (std::string::npos == card1.find_first_of("0123456789")) {
-          cout << "Name:" << card1 << " ";
-          cout << "Cost: " << price << " ";
-          cout << '\n';
-
-        }
+        // if (std::string::npos == card1.find_first_of("0123456789")) {
+        //   cout << "Name:" << card1 << " ";
+        //   cout << "Cost: " << price << " ";
+        //   cout << '\n';
+        //
+        // }
 
     }
 }
