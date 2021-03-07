@@ -35,10 +35,12 @@ int main()
             ss >> card2;
             ss >> worth;
             if ((std::string::npos != card2.find(card1)&&std::string::npos == card2.find_first_of("0123456789"))) {
-
+              int profit = 0;
+              profit = worth-price;
               cout << "Name:" << card2 << " ";
               cout << "Cost: " << worth << " ";
               cout << "Price: " << price << " ";
+              cout << "Profit: " << profit << " ";
               cout << '\n';
 
             }
