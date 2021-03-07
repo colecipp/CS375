@@ -12,6 +12,9 @@ int main()
     ifstream testFile1("MarketPriceFile");
     ifstream testFile2("PriceListFile");
     string line;
+    int maxProfit = 0;
+    set<int> S;
+    set<int> M;
 
     while(getline(testFile1, line)){
 
@@ -29,6 +32,7 @@ int main()
           cout << "Name:" << card << " ";
           cout << "Cost: " << worth << " ";
           cout << '\n';
+
         }
 
     }
@@ -48,6 +52,7 @@ int main()
           cout << "Name:" << card << " ";
           cout << "Cost: " << worth << " ";
           cout << '\n';
+
         }
 
     }
