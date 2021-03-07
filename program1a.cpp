@@ -63,7 +63,7 @@ int main()
             }
 
         }
-        std::replace(line1.begin(), line1.end(), ',', ' ');
+        // std::replace(line1.begin(), line1.end(), ',', ' ');
 
         stringstream ss(line1);
 
