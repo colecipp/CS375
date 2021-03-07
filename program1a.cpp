@@ -43,9 +43,9 @@ int main()
         ss >> card;
         ss >> worth;
 
-        if (std::card::npos != s.find_first_of("0123456789")) {
+        if (std::string::npos != card.find_first_of("0123456789")) {
           cout << "Name:" << card << " ";
-          cout << "Cost: " << worth << " ";  
+          cout << "Cost: " << worth << " ";
           cout << '\n';
         }
 
