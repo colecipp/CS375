@@ -12,8 +12,8 @@ int main(int argc, char *argv[])
     ifstream testFileM;
     ifstream testFileP;
     int maxProfit = 0;
-    set1<string, int> mPrice{};
-    set2<string, int> pPrice{};
+    map<string, int> mPrice{};
+    map<string, int> pPrice{};
 
     for(int i = 1; i<argc;i++ ){
         string arg = argv[i];
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
             break;
           }
           else{
-            market_prices = maker(arg2.c_str());
+            mPrice = maker(arg2.c_str());
           }
         }
         if (arg=="-p"){
@@ -35,5 +35,5 @@ int main(int argc, char *argv[])
           }
         }
     }
-    
+
 }
