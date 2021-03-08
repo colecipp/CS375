@@ -4,7 +4,7 @@
 #include <iostream>
 #include <sstream>
 #include <string>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 int main(int argc, char *argv[])
@@ -12,8 +12,8 @@ int main(int argc, char *argv[])
     ifstream testFileM;
     ifstream testFileP;
     int maxProfit = 0;
-    map<string, int> mPrice{};
-    map<string, int> pPrice{};
+    map1<string, int> mPrice{};
+    map2<string, int> pPrice{};
 
     for(int i = 1; i<argc;i++ ){
         string arg = argv[i];
